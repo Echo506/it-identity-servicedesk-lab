@@ -29,6 +29,14 @@ Administrar identidades en un entorno on-premise usando Active Directory Domain 
 6. Unir una VM cliente al dominio y verificar que la GPO se aplica correctamente (`gpupdate /force` y `gpresult /r`).
 7. Documentar el proceso con capturas de pantalla.
 
+## Scripts de automatizacion
+
+Esta carpeta del modulo incluye scripts de PowerShell para automatizar tareas administrativas comunes de AD. Ver [modules/02-active-directory/scripts](./scripts/README.md) para el detalle y ejemplos de uso:
+
+- `01-Create-BulkUsers.ps1`: creacion masiva de usuarios desde un archivo CSV.
+- `02-Unlock-ResetPassword.ps1`: desbloqueo de cuentas y reseteo de contrasena.
+- `03-Get-InactiveUsersReport.ps1`: reporte de cuentas inactivas para revision de seguridad.
+
 ## Checklist
 
 - [ ] Controlador de dominio instalado y promovido.
@@ -36,6 +44,7 @@ Administrar identidades en un entorno on-premise usando Active Directory Domain 
 - [ ] Usuarios y grupos de prueba creados y organizados.
 - [ ] GPO creada, enlazada y verificada en un cliente unido al dominio.
 - [ ] Capturas de pantalla documentadas.
+- [ ] Scripts de automatizacion revisados y probados en el laboratorio.
 
 ## Recursos sugeridos
 
@@ -48,4 +57,5 @@ Administrar identidades en un entorno on-premise usando Active Directory Domain 
 Poder explicar la jerarquia de un dominio de Active Directory (dominio, OUs, usuarios, grupos), crear y aplicar una GPO basica, y entender como estos conceptos sirven de base para la sincronizacion con la nube en el siguiente modulo.
 
 > Anterior: [Modulo 01 - Fundamentos de ITSM y ServiceNow](../01-servicenow-fundamentals/README.md)
+
 > Siguiente: [Modulo 03 - Microsoft Azure / Entra ID](../03-azure-entra-id/README.md)
