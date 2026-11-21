@@ -1,0 +1,23 @@
+# Archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Archivos de respaldo de bases de datos
+*.bak
+*.dump
+*.sql.bak
+
+# Credenciales y secretos
+.env
+*.env
+secrets.json
+credentials.json
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de IDE
+.vscode/
+.idea/
