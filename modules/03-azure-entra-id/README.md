@@ -45,6 +45,15 @@ Administrar identidades en la nube con Microsoft Entra ID (anteriormente Azure A
 - Microsoft Learn: "What is Microsoft Entra Connect?".
 - Documentacion sobre Conditional Access en Microsoft Entra ID.
 
+- https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps
+- https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview
+- https://learn.microsoft.com/en-us/entra/identity/conditional-access/
+- https://www.microsoft.com/en-us/download/details.aspx?id=47594
+- https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect
+- https://learn.microsoft.com/en-us/entra/identity/users/
+- https://learn.microsoft.com/en-us/entra/
+- https://learn.microsoft.com/en-us/entra/identity/
+
 ## Resultado esperado
 
 Poder explicar la diferencia entre Active Directory on-premise y Entra ID, describir como funciona la sincronizacion hibrida, y asignar roles administrativos delegados apropiados para funciones de soporte tecnico (principio de menor privilegio).
