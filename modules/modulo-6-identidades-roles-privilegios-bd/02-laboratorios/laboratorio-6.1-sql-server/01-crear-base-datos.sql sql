@@ -1,0 +1,37 @@
+CREATE DATABASE EmpresaDB;
+GO
+
+USE EmpresaDB;
+GO
+
+CREATE TABLE clientes (
+    id_cliente INT PRIMARY KEY IDENTITY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE productos (
+    id_producto INT PRIMARY KEY IDENTITY,
+    nombre VARCHAR(150) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE ventas (
+    id_venta INT PRIMARY KEY IDENTITY,
+    id_cliente INT FOREIGN KEY REFERENCES clientes(id_cliente),
+    id_producto INT FOREIGN KEY REFERENCES productos(id_producto),
+    cantidad INT NOT NULL,
+    fecha_venta DATETIME DEFAULT GETDATE()
+);
+
+INSERT INTO clientes (nombre, correo)
+VALUES ('Ana Pérez', 'ana@technova.com'),
+       ('Luis Gómez', 'luis@technova.com');
+
+INSERT INTO productos (nombre, precio)
+VALUES ('Laptop', 1200.00),
+       ('Monitor', 250.00);
+
+INSERT INTO ventas (id_cliente, id_producto, cantidad)
+VALUES (1, 1, 2),
+       (2, 2, 5);
