@@ -1,0 +1,6 @@
+Usuario,Rol,SELECT,INSERT,UPDATE,DELETE,CREATE,DROP
+admin_db,Administrador,Si,Si,Si,Si,Si,Si
+analista,Analista,Si,No,No,No,No,No
+consulta,Consultor,Si,No,No,No,No,No
+operador,Operador,Si,Si,Si,No,No,No
+auditor,Auditor,Si,No,No,No,No,No
