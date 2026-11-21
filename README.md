@@ -14,7 +14,7 @@
 **Construye experiencia práctica en identidades, soporte técnico, seguridad en la nube y protección de bases de datos.**
 
 [🚀 Comenzar](#-cómo-usar-este-laboratorio) ·
-[🧭 Roadmap](#-módulos-del-laboratorio) ·
+[🧭 Módulos](#-módulos-del-laboratorio) ·
 [🧪 Laboratorios](#-laboratorios-prácticos) ·
 [🔐 Seguridad](#-principios-de-seguridad) ·
 [📊 Evidencias](#-evidencias-de-portafolio)
@@ -40,16 +40,17 @@ Este repositorio complementa:
 
 ## 🧠 Áreas de especialización
 
-| Área | Tecnologías | Habilidades desarrolladas |
+| Área | Tecnologías | Módulo relacionado |
 |---|---|---|
-| 🎫 ITSM | ServiceNow, Jira Service Management | Incidentes, solicitudes, cambios, CMDB y flujos de trabajo |
-| 🧑‍💼 Identidad on-premise | Active Directory | Usuarios, grupos, OUs, GPOs y control de acceso |
-| ☁️ Identidad en la nube | Microsoft Entra ID | Usuarios, grupos, roles, app registrations y Conditional Access |
-| 🔁 Identidad híbrida | Microsoft Entra Connect | Sincronización entre AD y Entra ID |
-| 🔑 IDaaS | Okta | SSO, SCIM, MFA y ciclo de vida de usuarios |
-| 🗄️ Bases de datos | SQL Server, Oracle, PostgreSQL | Usuarios, roles, privilegios y auditoría |
-| ⚙️ Automatización | PowerShell | Administración, validación y documentación |
-| 🛡️ Seguridad | IAM, RBAC, MFA, Least Privilege | Control de acceso, auditoría y endurecimiento |
+| 🎫 ITSM | ServiceNow, Jira Service Management | [Módulo 01](modules/01-servicenow-fundamentals/) |
+| 🧑‍💼 Identidad on-premise | Active Directory | [Módulo 02](modules/02-active-directory/) |
+| ☁️ Identidad en la nube | Microsoft Entra ID | [Módulo 03](modules/03-azure-entra-id/) |
+| 🔁 Identidad híbrida | Microsoft Entra Connect | [Módulo 03](modules/03-azure-entra-id/) |
+| 🔑 IDaaS | Okta | [Módulo 04](modules/04-okta-sso-scim/) |
+| 🔗 Integración | ServiceNow, AD, Entra ID, Okta | [Módulo 05](modules/05-incident-identity-integration/) |
+| 🗄️ Bases de datos | SQL Server, Oracle, PostgreSQL | [Módulo 06](modules/06-database-identity-access-security/) |
+| ⚙️ Automatización | PowerShell | [Recursos](docs/) |
+| 🛡️ Seguridad | IAM, RBAC, MFA, Least Privilege | [Seguridad](#-principios-de-seguridad) |
 
 ---
 
@@ -97,20 +98,22 @@ flowchart LR
 
 ## 🧭 Módulos del laboratorio
 
-| Módulo | Tema | Nivel | Tiempo estimado | Estado |
-|---|---|---|---:|---|
-| 01 | Fundamentos de ITSM y ServiceNow | Básico | 2-3 horas | 🟡 En progreso |
-| 02 | Active Directory: usuarios, grupos, OUs y GPOs | Intermedio | 3-4 horas | 🟡 En progreso |
-| 03 | Microsoft Entra ID: identidades, roles y acceso | Intermedio | 3-4 horas | 🟡 En progreso |
-| 04 | Okta: SSO, SCIM y MFA | Intermedio | 2-3 horas | ⚪ Pendiente |
-| 05 | Integración de identidad y gestión de incidentes | Avanzado | 2-3 horas | ⚪ Pendiente |
-| 06 | Identidades, roles y privilegios en bases de datos | Intermedio-Avanzado | 8-10 horas | 🟡 En progreso |
+| Módulo | Tema | Carpeta | Nivel | Tiempo estimado | Estado |
+|---|---|---|---|---:|---|
+| 01 | Fundamentos de ITSM y ServiceNow | [Abrir módulo](modules/01-servicenow-fundamentals/) | Básico | 2-3 horas | 🟡 En progreso |
+| 02 | Active Directory: usuarios, grupos, OUs y GPOs | [Abrir módulo](modules/02-active-directory/) | Intermedio | 3-4 horas | 🟡 En progreso |
+| 03 | Microsoft Entra ID: identidades, roles y acceso | [Abrir módulo](modules/03-azure-entra-id/) | Intermedio | 3-4 horas | 🟡 En progreso |
+| 04 | Okta: SSO, SCIM y MFA | [Abrir módulo](modules/04-okta-sso-scim/) | Intermedio | 2-3 horas | ⚪ Pendiente |
+| 05 | Integración de identidad y gestión de incidentes | [Abrir módulo](modules/05-incident-identity-integration/) | Avanzado | 2-3 horas | ⚪ Pendiente |
+| 06 | Identidades, roles y privilegios en bases de datos | [Abrir módulo](modules/06-database-identity-access-security/) | Intermedio-Avanzado | 8-10 horas | 🟡 En progreso |
 
 **Tiempo total estimado:** 20-27 horas
 
 ---
 
 ## 🎫 Módulo 01 — ITSM y ServiceNow
+
+📁 **Carpeta del módulo:** [`modules/01-servicenow-fundamentals/`](modules/01-servicenow-fundamentals/)
 
 ### Objetivos
 
@@ -125,7 +128,7 @@ flowchart LR
 Un empleado reporta que no puede acceder a una aplicación empresarial. El analista debe:
 
 1. Crear un incidente.
-2. Identificar el usuario afectado.
+2. Identificar al usuario afectado.
 3. Verificar su identidad en Active Directory o Entra ID.
 4. Validar permisos, MFA o acceso a la aplicación.
 5. Documentar la causa raíz.
@@ -134,6 +137,8 @@ Un empleado reporta que no puede acceder a una aplicación empresarial. El anali
 ---
 
 ## 🧑‍💼 Módulo 02 — Active Directory
+
+📁 **Carpeta del módulo:** [`modules/02-active-directory/`](modules/02-active-directory/)
 
 ### Objetivos
 
@@ -162,6 +167,8 @@ flowchart TD
 
 ## ☁️ Módulo 03 — Microsoft Entra ID
 
+📁 **Carpeta del módulo:** [`modules/03-azure-entra-id/`](modules/03-azure-entra-id/)
+
 ### Objetivos
 
 - Administrar usuarios, grupos y roles en Entra ID.
@@ -180,6 +187,8 @@ flowchart TD
 ---
 
 ## 🔑 Módulo 04 — Okta
+
+📁 **Carpeta del módulo:** [`modules/04-okta-sso-scim/`](modules/04-okta-sso-scim/)
 
 ### Objetivos
 
@@ -211,6 +220,8 @@ sequenceDiagram
 
 ## 🔗 Módulo 05 — Integración de identidad e incidentes
 
+📁 **Carpeta del módulo:** [`modules/05-incident-identity-integration/`](modules/05-incident-identity-integration/)
+
 ### Objetivo
 
 Simular un flujo completo de soporte técnico desde la creación de un ticket hasta la resolución del incidente.
@@ -234,6 +245,8 @@ flowchart TD
 
 ## 🗄️ Módulo 06 — Identidades, roles y privilegios en bases de datos
 
+📁 **Carpeta del módulo:** [`modules/06-database-identity-access-security/`](modules/06-database-identity-access-security/)
+
 Este módulo se enfoca en la creación y administración de identidades, roles y privilegios en bases de datos relacionales, aplicando el principio de menor privilegio y el control de acceso basado en roles.
 
 ### Motores cubiertos
@@ -253,55 +266,6 @@ Este módulo se enfoca en la creación y administración de identidades, roles y
 - Diseñar una matriz de control de acceso.
 - Auditar usuarios, roles y permisos.
 - Documentar la configuración de seguridad.
-
-### Modelo de control de acceso
-
-```mermaid
-flowchart TD
-    A[Usuario] --> B{Rol asignado}
-    B -->|Administrador| C[Control total]
-    B -->|Analista| D[Solo lectura]
-    B -->|Operador| E[Insertar y actualizar]
-    B -->|Consultor| F[Lectura limitada]
-    B -->|Auditor| G[Lectura de auditoría]
-
-    C --> H[Base de datos]
-    D --> H
-    E --> H
-    F --> H
-    G --> H
-```
-
-### Matriz de control de acceso
-
-| Usuario | Rol | SELECT | INSERT | UPDATE | DELETE | CREATE | DROP |
-|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| `admin_db` | Administrador | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `analista` | Analista | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| `operador` | Operador | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| `consulta` | Consultor | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| `auditor` | Auditor | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-
-### Laboratorios
-
-| Laboratorio | Motor | Objetivo |
-|---|---|---|
-| 6.1 | SQL Server | Crear usuarios, roles y permisos |
-| 6.2 | Oracle Database | Administrar usuarios, roles y privilegios |
-| 6.3 | PostgreSQL | Implementar control de acceso basado en roles |
-| 6.4 | Multi-motor | Auditar privilegios y crear matriz de acceso |
-
-### Proyecto final: TechNova
-
-Diseñar e implementar un modelo de control de acceso para la empresa ficticia **TechNova**.
-
-| Perfil | Permisos requeridos |
-|---|---|
-| Administrador | Crear tablas, insertar, actualizar, eliminar y administrar usuarios |
-| Analista | Leer todas las tablas y ejecutar reportes |
-| Operador | Insertar y actualizar registros de ventas |
-| Consultor | Solo lectura de información pública |
-| Auditor | Leer registros de auditoría sin modificar datos |
 
 ### Estructura del módulo
 
@@ -334,12 +298,38 @@ modules/06-database-identity-access-security/
     └── glossary.md
 ```
 
+### Enlaces directos
+
+| Sección | Enlace |
+|---|---|
+| Teoría | [Abrir carpeta](modules/06-database-identity-access-security/01-theory/) |
+| Laboratorios | [Abrir carpeta](modules/06-database-identity-access-security/02-labs/) |
+| Proyecto final | [Abrir carpeta](modules/06-database-identity-access-security/03-final-project/) |
+| Recursos | [Abrir carpeta](modules/06-database-identity-access-security/04-resources/) |
+| SQL Server | [Laboratorio 6.1](modules/06-database-identity-access-security/02-labs/lab-6.1-sql-server/) |
+| Oracle | [Laboratorio 6.2](modules/06-database-identity-access-security/02-labs/lab-6.2-oracle/) |
+| PostgreSQL | [Laboratorio 6.3](modules/06-database-identity-access-security/02-labs/lab-6.3-postgresql/) |
+| Auditoría | [Laboratorio 6.4](modules/06-database-identity-access-security/02-labs/lab-6.4-access-audit/) |
+| Proyecto TechNova | [Abrir proyecto](modules/06-database-identity-access-security/03-final-project/) |
+
+### Matriz de control de acceso
+
+| Usuario | Rol | SELECT | INSERT | UPDATE | DELETE | CREATE | DROP |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| `admin_db` | Administrador | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| `analista` | Analista | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| `operador` | Operador | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| `consulta` | Consultor | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| `auditor` | Auditor | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+
 ---
 
 ## 🧪 Laboratorios prácticos
 
 <details>
 <summary><strong>🟦 Laboratorio 6.1 — SQL Server</strong></summary>
+
+📁 **Abrir laboratorio:** [`modules/06-database-identity-access-security/02-labs/lab-6.1-sql-server/`](modules/06-database-identity-access-security/02-labs/lab-6.1-sql-server/)
 
 ### Objetivo
 
@@ -355,100 +345,53 @@ Crear usuarios, roles y permisos en Microsoft SQL Server.
 - Probar accesos.
 - Revocar permisos innecesarios.
 
-### Script base
-
-```sql
-CREATE DATABASE EmpresaDB;
-GO
-
-USE EmpresaDB;
-GO
-
-CREATE TABLE clientes (
-    id_cliente INT PRIMARY KEY IDENTITY,
-    nombre VARCHAR(100) NOT NULL,
-    correo VARCHAR(150) NOT NULL
-);
-
-CREATE TABLE productos (
-    id_producto INT PRIMARY KEY IDENTITY,
-    nombre VARCHAR(150) NOT NULL,
-    precio DECIMAL(10,2) NOT NULL
-);
-
-CREATE TABLE ventas (
-    id_venta INT PRIMARY KEY IDENTITY,
-    id_cliente INT FOREIGN KEY REFERENCES clientes(id_cliente),
-    id_producto INT FOREIGN KEY REFERENCES productos(id_producto),
-    cantidad INT NOT NULL,
-    fecha_venta DATETIME DEFAULT GETDATE()
-);
-```
-
 </details>
 
 <details>
 <summary><strong>🟧 Laboratorio 6.2 — Oracle Database</strong></summary>
 
+📁 **Abrir laboratorio:** [`modules/06-database-identity-access-security/02-labs/lab-6.2-oracle/`](modules/06-database-identity-access-security/02-labs/lab-6.2-oracle/)
+
 ### Objetivo
 
 Crear usuarios, roles y privilegios en Oracle Database.
 
-### Script base
+### Actividades
 
-```sql
-CREATE USER estudiante_oracle IDENTIFIED BY "ClaveSegura123!";
-
-GRANT CREATE SESSION TO estudiante_oracle;
-
-CREATE ROLE rol_reportes;
-
-GRANT SELECT ON HR.EMPLEADOS TO rol_reportes;
-
-GRANT rol_reportes TO estudiante_oracle;
-```
+- Crear usuario.
+- Otorgar privilegio de sesión.
+- Crear rol.
+- Asignar permisos de lectura.
+- Probar acceso.
+- Revocar permisos.
 
 </details>
 
 <details>
 <summary><strong>🐘 Laboratorio 6.3 — PostgreSQL</strong></summary>
 
+📁 **Abrir laboratorio:** [`modules/06-database-identity-access-security/02-labs/lab-6.3-postgresql/`](modules/06-database-identity-access-security/02-labs/lab-6.3-postgresql/)
+
 ### Objetivo
 
 Implementar control de acceso basado en roles en PostgreSQL.
 
-### Script base
+### Actividades
 
-```sql
-CREATE DATABASE inventario;
-
-\c inventario
-
-CREATE TABLE categorias (
-    id_categoria SERIAL PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE productos (
-    id_producto SERIAL PRIMARY KEY,
-    nombre VARCHAR(150) NOT NULL,
-    precio NUMERIC(10,2) NOT NULL,
-    id_categoria INT REFERENCES categorias(id_categoria)
-);
-
-CREATE TABLE movimientos (
-    id_movimiento SERIAL PRIMARY KEY,
-    id_producto INT REFERENCES productos(id_producto),
-    tipo_movimiento VARCHAR(20) NOT NULL,
-    cantidad INT NOT NULL,
-    fecha_movimiento TIMESTAMP DEFAULT NOW()
-);
-```
+- Crear base de datos `inventario`.
+- Crear tablas.
+- Crear roles.
+- Crear usuarios.
+- Asignar permisos.
+- Probar accesos.
+- Revocar permisos innecesarios.
 
 </details>
 
 <details>
 <summary><strong>🔍 Laboratorio 6.4 — Auditoría de privilegios</strong></summary>
+
+📁 **Abrir laboratorio:** [`modules/06-database-identity-access-security/02-labs/lab-6.4-access-audit/`](modules/06-database-identity-access-security/02-labs/lab-6.4-access-audit/)
 
 ### Objetivo
 
@@ -482,6 +425,8 @@ Al finalizar el laboratorio, deberás contar con evidencias profesionales como:
 - ✅ Diagramas de arquitectura.
 - ✅ Documentación de procedimientos.
 
+📁 **Carpeta de evidencias:** [`docs/evidence/`](docs/evidence/)
+
 ---
 
 ## 🔐 Principios de seguridad
@@ -508,6 +453,8 @@ Al finalizar el laboratorio, deberás contar con evidencias profesionales como:
 - [PostgreSQL GRANT](https://www.postgresql.org/docs/current/sql-grant.html)
 - [PostgreSQL REVOKE](https://www.postgresql.org/docs/current/sql-revoke.html)
 - [ServiceNow Developers](https://developer.servicenow.com/)
+
+📁 **Carpeta de recursos:** [`docs/resources/`](docs/resources/)
 
 ---
 
