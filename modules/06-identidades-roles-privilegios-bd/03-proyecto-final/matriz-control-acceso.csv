@@ -1,0 +1,6 @@
+Usuario,Rol,SELECT,INSERT,UPDATE,DELETE,CREATE,DROP
+admin_tn,Administrador,Si,Si,Si,Si,Si,Si
+analista_tn,Analista,Si,No,No,No,No,No
+operador_tn,Operador,Si,Si,Si,No,No,No
+consultor_tn,Consultor,Si,No,No,No,No,No
+auditor_tn,Auditor,Si,No,No,No,No,No
