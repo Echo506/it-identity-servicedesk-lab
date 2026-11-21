@@ -1,0 +1,20 @@
+# Laboratorio 6.4: Auditoría de privilegios
+
+## Objetivo
+
+Detectar y corregir permisos excesivos.
+
+## Actividades
+
+1. Revisar usuarios y roles creados.
+2. Identificar permisos innecesarios.
+3. Revocar privilegios excesivos.
+4. Documentar accesos.
+5. Crear matriz de control de acceso.
+6. Elaborar informe de hallazgos.
+
+## Entregable
+
+- Matriz de control de acceso.
+- Informe de auditoría.
+- Capturas de pantalla.
