@@ -1,0 +1,53 @@
+modulo-6-identidades-roles-privilegios-bd/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── 01-teoria/
+│   ├── 01-fundamentos-seguridad-bd.md
+│   ├── 02-sql-server.md
+│   ├── 03-oracle.md
+│   ├── 04-postgresql.md
+│   └── 05-auditoria-y-buenas-practicas.md
+│
+├── 02-laboratorios/
+│   ├── laboratorio-6.1-sql-server/
+│   │   ├── README.md
+│   │   ├── 01-crear-base-datos.sql
+│   │   ├── 02-crear-usuarios.sql
+│   │   ├── 03-crear-roles.sql
+│   │   ├── 04-asignar-permisos.sql
+│   │   └── 05-pruebas-acceso.sql
+│   │
+│   ├── laboratorio-6.2-oracle/
+│   │   ├── README.md
+│   │   ├── 01-crear-usuario.sql
+│   │   ├── 02-crear-rol.sql
+│   │   ├── 03-asignar-permisos.sql
+│   │   └── 04-pruebas-acceso.sql
+│   │
+│   ├── laboratorio-6.3-postgresql/
+│   │   ├── README.md
+│   │   ├── 01-crear-base-datos.sql
+│   │   ├── 02-crear-roles.sql
+│   │   ├── 03-asignar-permisos.sql
+│   │   └── 04-pruebas-acceso.sql
+│   │
+│   └── laboratorio-6.4-auditoria/
+│       ├── README.md
+│       ├── matriz-control-acceso.csv
+│       └── informe-auditoria.md
+│
+├── 03-proyecto-final/
+│   ├── README.md
+│   ├── tehnova-modelo-datos.sql
+│   ├── usuarios-y-roles.sql
+│   ├── permisos.sql
+│   ├── pruebas-acceso.sql
+│   ├── matriz-control-acceso.csv
+│   └── informe-seguridad.md
+│
+└── 04-recursos/
+    ├── enlaces-oficiales.md
+    └── glosario.md
